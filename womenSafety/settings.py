@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fzsjcl70o=b3&g_y$vmva6uy_0yxg@wao-wz32*-93*owj&^ud'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://dev-django-test.herokuapp.com/"]
 
 
 # Application definition
@@ -162,3 +163,4 @@ JET_THEMES = [
         'title': 'Light Gray'
     }
 ]
+django_heroku.settings(locals())
