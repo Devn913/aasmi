@@ -10,6 +10,7 @@ crispy-tailwind = "*"
 pillow = "*"
 python-dotenv = "*"
 django-jet-reboot = "*"
+six = "*"
 
 [dev-packages]
 
